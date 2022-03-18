@@ -1,0 +1,1 @@
+module.exports = {cronTime:'15 8 */1 * *'}
