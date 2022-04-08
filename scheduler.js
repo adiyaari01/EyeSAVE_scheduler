@@ -21,4 +21,9 @@ const repeatAlertNoonJob = new CronJob('*/5 * * * *',  noonJob);
 const StopMorningRepeat = new CronJob('* 9 */1 * *', () => repeatAlertMorningJob.stop());
 const StopNoonRepeat = new CronJob('* 14 */1 * *', () => repeatAlertNoonJob.stop());
 
+// const startJobNow = async ()=>{
+//     await morningJob();
+// }
+
+// startJobNow();
 Promise.all([absenceJob.start(),absenceEscort.start(), StopMorningRepeat.start(), StopNoonRepeat.start()]);
