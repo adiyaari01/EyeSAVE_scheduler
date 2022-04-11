@@ -16,6 +16,7 @@ exports.sendMessage = (userId, msg) => {
     axios({
         method: 'post',
         url: 'http://localhost:8001/escort/send',
+        // url: 'https://eyesave-noitfications.herokuapp.com/escort/send',
         data: {
             userId: userId,
             msg: msg,
